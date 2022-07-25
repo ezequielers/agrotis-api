@@ -1,0 +1,16 @@
+com/agrotis/api/service/LaboratoryService.class
+com/agrotis/api/model/LaboratoryModel$LaboratoryModelBuilder.class
+com/agrotis/api/AgrotisApiApplication.class
+com/agrotis/api/model/UserModel$UserModelBuilder.class
+com/agrotis/api/service/UserService.class
+com/agrotis/api/service/PropertyInfoService.class
+com/agrotis/api/controller/UserController.class
+com/agrotis/api/controller/PropertyInfoController.class
+com/agrotis/api/model/PropertyInfoModel.class
+com/agrotis/api/controller/LaboratoryController.class
+com/agrotis/api/model/PropertyInfoModel$PropertyInfoModelBuilder.class
+com/agrotis/api/model/UserModel.class
+com/agrotis/api/repository/LaboratoryRepository.class
+com/agrotis/api/model/LaboratoryModel.class
+com/agrotis/api/repository/PropertyInfoRepository.class
+com/agrotis/api/repository/UserRepository.class

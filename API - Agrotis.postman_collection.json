@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "e1fad49f-8fc4-442e-9641-27dc8389e86e",
+		"name": "API - Agrotis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6224395"
+	},
+	"item": [
+		{
+			"name": "Laboratory",
+			"item": [
+				{
+					"name": "List Laboratories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/laboratory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Laboratory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Lab Pharm 2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/laboratory",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Laboratory",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Lab Pharm Co.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/laboratory/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratory",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Laboratory",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/laboratory/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratory",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "List Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kevin Page\",\n    \"initialDate\": \"2022-07-25T15:00:00.000+00:00\",\n    \"finalDate\": \"2022-07-25T15:00:00.000+00:00\",\n    \"propertyInfo\": {\n        \"id\": \"3\"\n    },\n    \"laboratory\": {\n        \"id\": \"1\"\n    },\n    \"notes\": \"Observations test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sir. Kevin Page\",\n    \"initialDate\": \"2022-07-25T15:00:00.000+00:00\",\n    \"finalDate\": \"2022-07-25T15:00:00.000+00:00\",\n    \"propertyInfoModel\": {\n        \"id\": 3\n    },\n    \"laboratoryModel\": {\n        \"id\": 1\n    },\n    \"notes\": \"Observations test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/user/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/user/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Property Info",
+			"item": [
+				{
+					"name": "List Properties Info",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/propertyinfo",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propertyinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Property Info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Duda's Ranch\",\n    \"cnpj\": \"12.456.852/2145-58\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/propertyinfo",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propertyinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Property Info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Duda's Ranch Camp\",\n    \"cnpj\": \"12.456.852/2145-58\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/propertyinfo/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propertyinfo",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Property Info",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/propertyinfo/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propertyinfo",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
